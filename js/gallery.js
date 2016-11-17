@@ -44,8 +44,9 @@ $(function() {
         itemHeight = column;
         imgHeight = "100%";
         imgWidth = "auto";
+    } else {
+      var column = ($(window).width() - (padding * 2) - 15) / numcol;
     }
-    var column = ($(window).width() - (padding * 2) - 15) / numcol;
 
     $.ajax({
         url: "./api/gallery_init.php",
@@ -56,8 +57,8 @@ $(function() {
         method: "GET",
         success: function(data) {
             for (var i = 0; i < data.length; i++) {
-                delay = i * 0.05
-                $('<div class="grid-item" style = "animation-delay:' + delay + 's;transform:scale(0);height:'+itemHeight+'px;overflow:hidden;"><img src="images/gallery/' + data[i] + '" style="max-height: 100%; height:'+imgHeight+';width:'+imgWidth+';"></div>').appendTo(".grid");
+                delay = i * 1
+                $('<div class="grid-item" style = "animation-delay:' + delay + 's;height:'+itemHeight+'px;overflow:hidden;"><img src="images/gallery/' + data[i] + '" style="max-height: 100%; height:'+imgHeight+';width:'+imgWidth+';"></div>').appendTo(".grid");
             }
             $('.grid-item').css("width", column + "px");
             $(".grid").imagesLoaded().then(function() {
