@@ -30,6 +30,8 @@ $(function() {
     var itemHeight = "auto";
     var imgHeight = "auto";
     var imgWidth = "100%";
+
+
     var delay = 0;
 
         //Responsive adjustments
