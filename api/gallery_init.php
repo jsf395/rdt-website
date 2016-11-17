@@ -6,9 +6,9 @@ if (isset($_GET["key"]) && isset($_GET["index"])) {
   $files = scandir($directory);
   $result = array();
 
-  for ($i = $index; $i < $index + 20; $i++) {
+  for ($i = $index; $i < $index + 30; $i++) {
     if (!is_dir($directory."/".$files[$i])) {
-      $result[] = $files[$i]; 
+      $result[] = $files[$i];
     }
   }
 
