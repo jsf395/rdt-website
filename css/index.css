@@ -1,11 +1,6 @@
 body {
   background-color: white;
-  /* color-scheme */
-  -webkit-text-size-adjust: 100%;
 }
-
-
-/* Remove the navbar's default margin-bottom and rounded borders */
 
 .nav {
   padding-bottom: 7px;
@@ -58,6 +53,7 @@ body {
   position: relative;
 }
 
+
 /* Add a gray background color and some padding to the footer */
 
 .blurb {
@@ -84,16 +80,7 @@ body {
   font-family: 'Open Sans', Arial;
   font-size: medium;
   height: auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  color: #555;
-  text-align: justify;
-=======
   color: black;
->>>>>>> jsf395/master
-=======
-  color: black;
->>>>>>> jsf395/master
   padding-top: 40px;
   padding-bottom: 25px;
   background-color: white;
@@ -150,12 +137,8 @@ body {
 
 #contact {
   display: flex;
-  /* establish flex container */
   flex-direction: row;
-  /* default value; can be omitted */
   flex-wrap: nowrap;
-  /* default value; can be omitted */
-  /* switched from default (flex-start, see below) */
   background-color: rgba(0, 0, 0, 0);
   margin-bottom: 20px;
   height: 190px;
@@ -165,12 +148,9 @@ body {
   padding-left: 0
 }
 
-
-/*#contact > div {
-  width: 100px;
-  height: 100px;
-}*/
-
+.img-responsive {
+  max-height: 200px;
+}
 .sponsor_info {
   font-family: 'Open Sans', Arial;
   width: 100%;
@@ -435,11 +415,6 @@ hr {
     font-size: 55px;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> jsf395/master
 
 
 /*fonts*/
@@ -454,13 +429,4 @@ hr {
   url('fonts/gotham-bold.ttf') format('truetype'), /* Safari, Android, iOS */
   url('fonts/gotham-bold.svg#svgFontName') format('svg');
   /* Legacy iOS */
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
->>>>>>> jsf395/master
-=======
-}
->>>>>>> jsf395/master
-=======
-}
->>>>>>> jsf395/master
